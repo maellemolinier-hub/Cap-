@@ -1,32 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Bot, Gauge, Layers } from "lucide-react";
+import { ArrowRight, Users, Sparkles, ShieldCheck } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
 const badges = [
-  { icon: Bot, label: "Pilotage d'agents IA" },
-  { icon: Gauge, label: "En construction" },
+  { icon: Users, label: "Comptes nominatifs illimités" },
+  { icon: ShieldCheck, label: "Livré propriétaire" },
 ];
 
-const placeholders = [
+const features = [
   {
-    icon: Layers,
-    title: "Section à définir",
+    icon: Users,
+    title: "Comptes nominatifs illimités",
     description:
-      "Emplacement réservé pour présenter une fonctionnalité clé de Cap+ — à remplacer par le vrai contenu.",
+      "Chaque client a son propre compte dans Cap+. Pas de plafond sur le nombre de clients que tu peux piloter.",
   },
   {
-    icon: Gauge,
-    title: "Section à définir",
+    icon: Sparkles,
+    title: "Assistants métiers sur mesure",
     description:
-      "Emplacement réservé pour un deuxième argument produit — à remplacer par le vrai contenu.",
+      "Configurés selon le besoin réel de chaque client — pas un bot générique. Un commercial, un comptable, un SAV… ce qu'il lui faut.",
   },
   {
-    icon: Bot,
-    title: "Section à définir",
+    icon: ShieldCheck,
+    title: "Livré propriétaire",
     description:
-      "Emplacement réservé pour un troisième argument produit — à remplacer par le vrai contenu.",
+      "L'assistant appartient au client : sa configuration, ses données. Pas un accès locatif à un outil partagé.",
   },
 ];
 
@@ -58,15 +58,16 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-ink-950 leading-[1.08] tracking-tight text-balance">
-              Cap<span className="text-brand-600">+</span>, le dashboard pour
-              piloter vos agents IA
+              Cap<span className="text-brand-600">+</span>, le pilote de vos
+              assistants métiers clients
             </h1>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="text-lg text-ink-500 leading-relaxed">
-              Page d&apos;accueil provisoire — la structure et le design sont
-              en place, le contenu produit final reste à écrire.
+              Un compte nominatif par client, un assistant métier configuré
+              pour son besoin, livré en propriété — pas un bot générique
+              loué.
             </p>
           </Reveal>
 
@@ -80,10 +81,10 @@ export function Hero() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="#"
+                href="#offre"
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-ink-50 text-ink-900 font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-premium border border-ink-200"
               >
-                En savoir plus
+                Voir l&apos;offre
               </Link>
             </div>
           </Reveal>
@@ -94,15 +95,15 @@ export function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-xs font-semibold tracking-widest text-brand-600 uppercase mb-3">
-              À compléter
+              Le principe
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-ink-950">
-              Trois arguments produit à venir ici
+              Un assistant par client, pas un outil générique
             </h2>
           </Reveal>
 
           <div className="grid sm:grid-cols-3 gap-6">
-            {placeholders.map(({ icon: Icon, title, description }, i) => (
+            {features.map(({ icon: Icon, title, description }, i) => (
               <Reveal
                 key={title + i}
                 delay={i * 80}
