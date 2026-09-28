@@ -6,7 +6,7 @@ const offers = [
   {
     name: "Forfait installation",
     tagline: "Pour démarrer avec un client",
-    price: "600 €",
+    price: "2 500 €",
     period: "one-shot, par assistant",
     highlight: false,
     features: [
@@ -51,9 +51,8 @@ export function Pricing() {
         </Reveal>
 
         <p className="text-center text-xs text-ink-300 max-w-xl mx-auto mb-12">
-          Le forfait installation est calé sur les tarifs d&apos;activation
-          courants du secteur du service en ligne. L&apos;accompagnement reste
-          indicatif — à ajuster selon vos coûts réels.
+          L&apos;accompagnement reste indicatif — à ajuster selon vos coûts
+          réels.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto items-start">
