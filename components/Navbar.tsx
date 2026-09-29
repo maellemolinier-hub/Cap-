@@ -32,12 +32,20 @@ export function Navbar() {
             </span>
           </Link>
 
-          <Link
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors shadow-sm"
-          >
-            Être prévenu au lancement
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/login"
+              className="text-sm font-medium text-ink-600 hover:text-ink-950 transition-colors"
+            >
+              Se connecter
+            </Link>
+            <Link
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors shadow-sm"
+            >
+              Être prévenu au lancement
+            </Link>
+          </div>
         </div>
       </nav>
     </header>
