@@ -18,9 +18,9 @@ const features = [
   },
   {
     icon: Sparkles,
-    title: "Assistants métiers sur mesure",
+    title: "Texte ou agent vocal, sur mesure",
     description:
-      "Configurés selon le besoin réel de chaque client — pas un bot générique. Un commercial, un comptable, un SAV… ce qu'il lui faut.",
+      "Configuré selon le métier réel de chaque client — pas un bot générique. Un assistant qui répond, qualifie et prend rendez-vous à sa place.",
   },
   {
     icon: ShieldCheck,
@@ -65,9 +65,11 @@ export function Hero() {
 
           <Reveal delay={160}>
             <p className="text-lg text-ink-500 leading-relaxed">
-              Un compte nominatif par client, un assistant métier configuré
-              pour son besoin, livré en propriété — pas un bot générique
-              loué.
+              Un compte nominatif par client, un assistant — texte ou agent
+              vocal — configuré pour son métier, livré en propriété.{" "}
+              <span className="text-ink-700 font-medium">
+                Propriétaire, pas prisonnier.
+              </span>
             </p>
           </Reveal>
 
